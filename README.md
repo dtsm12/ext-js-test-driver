@@ -1,0 +1,1 @@
+Eclipse projects for testing combiinations of Sencha's ExtJS, Jasmine (BDD JavaScript unit test framework) & JsTestDriver (JavaScript unit test execution tool)
