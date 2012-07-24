@@ -1,7 +1,8 @@
 Ext.define('app.Application', {
     extend: 'Ext.app.Application',
+    requires: ['app.ExtTestHelper'],
 
-    constructor: function() {
+    constructor: function(launchFunction) {
         config = {
             name: 'AM',
 
@@ -12,9 +13,13 @@ Ext.define('app.Application', {
                 'Users'
             ]
         };
+        
+        if(launchFunction)
+        {
+        	config.launch = launchFunction;
+        }
 
         // instantiate ext.app.Application with specific configuration
         this.superclass.constructor(config);
-     },
-
+     }
 });

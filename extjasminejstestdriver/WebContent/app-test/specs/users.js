@@ -1,10 +1,13 @@
 describe("Users", function() {
     var store = null, ctlr = null;
-
+	
     beforeEach(function(){
+
+    	var application = app.ExtTestHelper.getApplication();
+    	
         if (!ctlr) {
-        	ctlr = getApplication().getController('Users');
-            //ctlr = Application.getController('Users');
+        	//ctlr = Application.getController('Users');
+        	ctlr = application.getController('Users');
         }
 
         if (!store) {
